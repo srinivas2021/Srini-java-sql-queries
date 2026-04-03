@@ -11,4 +11,5 @@ WHERE EmployeeID NOT IN (
 2) Highest Salary from Employee table:
 
 Select salary from employee ORDER BY salary DESC LIMIT 0,1; 
+
 Select salary from employee ORDER BY salary DESC LIMIT 1,1; //2nd highest
