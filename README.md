@@ -1,5 +1,5 @@
 # Srini-java-sql-queries
-1) SQL Query to Delete Duplicate Rows:
+1) **SQL Query to Delete Duplicate Rows:**
 
 DELETE FROM Employees
 WHERE EmployeeID NOT IN (
@@ -8,7 +8,7 @@ WHERE EmployeeID NOT IN (
     GROUP BY Name, Department
 );
 
-2) Highest Salary from Employee table:
+2) **Highest Salary from Employee table:**
 
 Select salary from employee ORDER BY salary DESC LIMIT 0,1; 
 
