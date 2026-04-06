@@ -8,7 +8,14 @@ WHERE EmployeeID NOT IN (
     GROUP BY Name, Department
 );
 
-2) **Highest Salary from Employee table:**
+2) **Identify Duplicate Records**
+
+SELECT GeekRank, COUNT(GeekID) AS DuplicateRanks
+FROM Geeks
+GROUP BY GeekRank
+HAVING COUNT(GeekRank)>1; 
+
+3) **Highest Salary from Employee table:**
 
 Select salary from employee ORDER BY salary DESC LIMIT 0,1; 
 
