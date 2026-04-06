@@ -10,6 +10,11 @@ WHERE EmployeeID NOT IN (
 
 2) **Identify Duplicate Records**
 
+SELECT a.*
+FROM table_name a
+JOIN table_name b ON a.duplicate_column = b.duplicate_column
+WHERE a.id <> b.id;
+
 SELECT GeekRank, COUNT(GeekID) AS DuplicateRanks
 FROM Geeks
 GROUP BY GeekRank
